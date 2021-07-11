@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    window.peers = {};
+</script>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microsoft Teams for Engage 2021</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+    <script>
+        const ROOM_ID = "<%= roomId %>";
+        let val = 0;
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <div class="MSlogo">
+                <i class="fab fa-microsoft"></i>
+                <br>
+            </div>
+            <h2 style="color: white;">MS TEAMS</h2>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main__left">
+            <div class="videos__group">
+                <div id="video-grid">
+
+                </div>
+            </div>
+            <div class="options">
+                <div class="options__left">
+                    <div id="stopVideo" class="options__button">
+                        <i class="fa fa-video-camera"></i>
+                    </div>
+                    <div id="mute" class="options__button">
+                        <i class="fa fa-microphone-alt"></i>
+                    </div>
+                    <div id="showChat" class="options__button">
+                        <i class="far fa-comment-alt"></i>
+                    </div>
+                </div>
+                <div class="options__right">
+                    <div id="invite" class="options__button">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div id="leave" class="options__button">
+                        <i class="fas fa-door-open"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__right">
+            <div id="chatclose" class="chatCloseButton">
+                <h6><i class="fas fa-times"></i> Close Chat</h6>
+            </div>
+            <div class="main__chat_window">
+                <div class="messages">
+                </div>
+            </div>
+            <div class="main__message_container">
+                <input id="chat_message" type="text" autocomplete="off" placeholder="Type message here...">
+                <div id="send" class="options__button">
+                    <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
