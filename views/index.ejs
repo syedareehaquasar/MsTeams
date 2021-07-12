@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Microsoft Teams Clone</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font: 20px Montserrat, sans-serif;
+            line-height: 1.8;
+            color: #f5f6f7;
+        }
+        
+        p {
+            font-size: 16px;
+        }
+        
+        .margin {
+            margin-bottom: 45px;
+        }
+        
+        .bg-1 {
+            background-color: #6871ee;
+            color: white;
+        }
+        
+        .bg-2 {
+            background-color: whitesmoke;
+            /* Dark Blue */
+            color: #353b8f;
+        }
+        
+        .bg-3 {
+            background-color: #6871ee;
+            /* White */
+            color: white;
+        }
+        
+        .bg-4 {
+            background-color: whitesmoke;
+            /* Black Gray */
+            color: #6871ee;
+        }
+        
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+            font-weight: 600;
+        }
+        
+        .navbar-nav li a:hover {
+            color: #4f57c0 !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                <a class="navbar-brand" href="#">MS Teams</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#meet">JOIN MEETING</a></li>
+                    <li><a href="#demo">DEMO</a></li>
+                    <li><a href="#details">DETAILS</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- First Container -->
+    <div class="container-fluid bg-1 text-center" id="meet">
+        <h3 class="margin">Microsoft Teams Clone</h3><br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Microsoft_Office_Teams_%282018%E2%80%93present%29.svg/1200px-Microsoft_Office_Teams_%282018%E2%80%93present%29.svg.png" style="display:inline" width="350" height="350">
+        <br>
+        <h3>
+            <a href="/meet">
+                <button style="background-color: #6871ee; border-radius: 20%; color: aliceblue; padding: 2%; border-color: aliceblue; border-style: groove;">
+                <h2 style="color: #f5f6f7;">Join Meeting</h2></button>
+            </a>
+        </h3>
+    </div>
+
+    <!-- Second Container -->
+    <div class="container-fluid bg-2 text-center" id="demo">
+        <h3 class="margin">Demo Video</h3>
+        <p>Microsoft Teams clone as part of Engage 2021</p>
+        <center>
+            <iframe width="420" height="345" src="https://www.youtube.com/embed/7yMJxUQuDFc" frameborder="0" allowfullscreen ng-show="showvideo">
+        </iframe>
+        </center>
+    </div>
+
+    <!-- Third Container (Grid) -->
+    <div class=" container-fluid bg-3 text-center " id="details">
+        <h3 class="margin ">Details</h3><br>
+        <div class="row ">
+            <div class="col-sm-4 ">
+                <p>Deployment</p>
+                <img src="https://pbs.twimg.com/profile_images/689189555765784576/3wgIDj3j.png " height="50%" class="img-responsive margin " style="width:100% " alt="Image ">
+            </div>
+            <div class="col-sm-4 ">
+                <p>GitHub Repository</p>
+                <a href="https://github.com/syedareehaquasar/MsTeams "><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png " height="50%" class="img-responsive margin
+                " style="width:100% " alt="Image "></a>
+            </div>
+            <div class="col-sm-4 ">
+                <p>Who am I?</p>
+                <a href="https://portfolios.talentsprint.com/~reeha ">
+                    <img src="reeha.png" class="img-responsive margin " style="height:auto" alt="Image "></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-4 text-center ">
+        <p>Author <a href="https://portfolios.talentsprint.com/~reeha ">Syeda Reeha Quasar</a></p>
+    </footer>
+
+</body>
+
+</html>

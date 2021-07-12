@@ -1,7 +1,7 @@
 {
     "name": "msteams",
     "version": "1.0.0",
-    "description": "Video call feature and chat feature. This is a project part of Engage 2021.",
+    "description": "Video call feature and chat feature. A project part of Engage 2021.",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",

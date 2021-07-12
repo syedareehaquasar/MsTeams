@@ -12,8 +12,12 @@ var io = socketIO(server);
 app.set("view engine", "ejs");
 app.engine('ejs', require('ejs').__express);
 
-app.get("/", (req, res) => {
+app.get("/meet", (req, res) => {
     res.render("meet", { roomId: req.params.room });
+});
+
+app.get("/", (req, res) => {
+    res.render("index");
 });
 
 app.get("/", (req, res) => {
@@ -36,5 +40,5 @@ io.on("connection", (socket) => {
 server.listen(process.env.PORT || 3000);
 
 app.get('/close', (req, res) => {
-    res.send("<script>window.close();</script > ")
+    res.redirect('../');
 });

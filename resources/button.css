@@ -1,0 +1,130 @@
+@media (max-width: 320px) {
+    html,
+    body {
+        transform: scale(1.125);
+    }
+}
+
+@media (max-width: 280px) {
+    html,
+    body {
+        transform: scale(1.0625);
+    }
+}
+
+@media (max-width: 220px) {
+    html,
+    body {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 200px) {
+    html,
+    body {
+        transform: scale(0.9);
+    }
+}
+
+input {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+.bevel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 32px;
+    height: 54px;
+    background: #f33 linear-gradient(to bottom, #f33 50%, #d11515 50%);
+    border-radius: 0px;
+    box-shadow: 0px 15px 25px -10px rgba(0, 0, 0, 0.5), inset 0px 0px 0px 0px rgba(255, 51, 51, 0), inset 0px -27px 0px 0px #d11515;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 0px 3px 5px #d11515, 0px 5px 10px #d11515, 0px 5px 10px #d11515, 0px 5px 10px #d11515, 0px 5px 10px #d11515;
+    color: #fff;
+    letter-spacing: 0.4px;
+    overflow: hidden;
+    outline: 0 !important;
+    transform: scale(1.01);
+    transition: all 0.2s ease-in-out;
+}
+
+.bevel:before,
+.bevel:after {
+    content: " ";
+    width: 27px;
+    max-width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: all 0.135s ease-in-out;
+    transition: all 0.135s cubic-bezier(0.74, 0.16, 0.24, 0.92);
+    transition-delay: 0.15s;
+}
+
+.bevel:before {
+    left: 0;
+    background: linear-gradient(45deg, transparent calc(200% / 3), #ff3333 calc(200% / 3)), linear-gradient(-45deg, #d11515 calc(100% / 3), transparent calc(100% / 3)), linear-gradient(to right, #f33, #d11515);
+}
+
+.bevel:after {
+    right: 0;
+    background: linear-gradient(-45deg, transparent calc(200% / 3), #ff3333 calc(200% / 3)), linear-gradient(45deg, #d11515 calc(100% / 3), transparent calc(100% / 3)), linear-gradient(to left, #f33, #d11515);
+}
+
+.bevel:hover {
+    transform: scale(1.07);
+    box-shadow: 0px 25px 40px -5px rgba(0, 0, 0, 0.3), inset 0px 0px 0px 0px rgba(255, 51, 51, 0), inset 0px -27px 0px 0px #d11515;
+}
+
+input:checked~.bevel {
+    padding: 0 18.5px;
+    background: rgba(255, 51, 51, 0);
+    box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.3), inset 0px 0px 0px 4px #f33, inset 0px 0px 0px 0px #d11515;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    text-shadow: 0px 3px 5px rgba(209, 21, 21, 0), 0px 5px 10px rgba(209, 21, 21, 0), 0px 5px 10px rgba(209, 21, 21, 0), 0px 5px 10px rgba(209, 21, 21, 0), 0px 5px 10px rgba(209, 21, 21, 0);
+    color: #f33;
+    transform: scale(0.7) rotate(-6deg);
+    transition: all 0.25s ease-in-out, text-shadow 0s ease-in-out, box-shadow 0.25s ease-in-out;
+    transition: all 0.45s cubic-bezier(0.6, -0.9, 0.39, 1.65), text-shadow 0s ease-in-out, box-shadow 0.45s cubic-bezier(0.6, -0.9, 0.39, 1.65);
+    transition-delay: 0.135s;
+}
+
+input:checked~.bevel:before,
+input:checked~.bevel:after {
+    transition-delay: 0s;
+}
+
+input:checked~.bevel:before {
+    transform: translateX(-100%);
+}
+
+input:checked~.bevel:after {
+    transform: translateX(100%);
+}
+
+input:checked~.bevel+span {
+    color: rgba(255, 51, 51, 0.1875);
+    transform: translateY(56px);
+}
+
+span {
+    display: block;
+    margin-bottom: 10px;
+    font-family: "Didact Gothic";
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+    z-index: -1;
+    transition: all 0.25s ease-in-out;
+    transition: all 0.45s cubic-bezier(0.74, 0.16, 0.24, 0.92);
+    transition-delay: 0.135s;
+}
