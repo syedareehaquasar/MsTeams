@@ -28,11 +28,14 @@ app.use(express.static("resources"));
 app.use("/peerjs", peerServer);
 
 io.on("connection", (socket) => {
-    socket.on("join-room", (roomId, userId, userName, socid) => {
+    socket.on("join-room", (roomId, userId, userName) => {
         socket.join(roomId);
-        io.to(roomId).emit("user-connected", userId, userName, socid);
+        io.to(roomId).emit("user-connected", userId, userName);
         socket.on("message", (message) => {
             io.to(roomId).emit("createMessage", message, userName);
+        });
+        socket.on("leave", (ROOM_ID, idstream) => {
+            io.to(ROOM_ID).emit("user-left", idstream);
         });
     });
 });
