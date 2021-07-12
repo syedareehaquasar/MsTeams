@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to msteams 👋</h1>
+<h1 align="center">Welcome to MS Teams 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/syedareehaquasar/MsTeams#readme" target="_blank">
@@ -14,7 +14,17 @@
 
 > Video call feature and chat feature. A project part of Engage 2021.
 
+### 🧪 [Try it out](https://srq-teams.herokuapp.com/)
+
+![home](./resources/readmeImg/a.jpg)
+![meeting](./resources/readmeImg/b.jpg)
+![more people](./resources/readmeImg/c.jpg)
+
+## Demo Video
+[![IDEMO](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+
 ### 🏠 [Homepage](https://github.com/syedareehaquasar/MsTeams#readme)
+
 
 ## Install
 
@@ -55,4 +65,4 @@ Copyright © 2021 [Syeda Reeha Quasar](https://github.com/syedareehaquasar).<br 
 This project is [MIT](https://github.com/syedareehaquasar/MsTeams/blob/master/LICENSE) licensed.
 
 ***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+_This README was generated with ❤️ by Reeha
