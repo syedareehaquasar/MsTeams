@@ -16,9 +16,9 @@
 
 ### 🧪 [Try it out](https://srq-teams.herokuapp.com/)
 
-![home](.\resources\readmeImg\a.JPG)
-![meeting](.\resources\readmeImg\b.JPG)
-![more people](.\resources\readmeImg\c.JPG)
+![home](https://github.com/syedareehaquasar/MsTeams/blob/main/resources/readmeImg/a.JPG)
+![meeting](https://github.com/syedareehaquasar/MsTeams/blob/main/resources/readmeImg/b.JPG)
+![more people](https://github.com/syedareehaquasar/MsTeams/blob/main/resources/readmeImg/c.JPG)
 
 ## Demo Video
 [![IDEMO](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
