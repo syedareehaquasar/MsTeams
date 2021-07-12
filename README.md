@@ -21,7 +21,7 @@
 ![more people](https://github.com/syedareehaquasar/MsTeams/blob/main/resources/readmeImg/c.JPG)
 
 ## Demo Video
-[![IDEMO](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+[![DEMO](https://img.youtube.com/vi/CRnPeDxjDtg/0.jpg)](https://www.youtube.com/watch?v=CRnPeDxjDtg)
 
 ### 🏠 [Homepage](https://github.com/syedareehaquasar/MsTeams#readme)
 
